@@ -1,0 +1,32 @@
+@font-face {
+    font-family: Open Sans;
+    src: url(https://killomi.github.io/surface/sources/fonts/OpenSans-Regular.woff);
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Open Sans;
+    src: url(https://killomi.github.io/surface/sources/fonts/OpenSans-Bold.woff);
+    font-weight: 700;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', Arial, sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    list-style: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+
+.header {
+    min-width: 320px;
+    min-height: 570px;
+    background-image: url("https://killomi.github.io/surface/sources/img/football_767.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
