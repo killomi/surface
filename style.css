@@ -637,3 +637,29 @@ body {
         fill: #ffffff;
     }
 }
+
+@media (min-width: 961px) {
+    .header {
+        background-image: url("sources/img/football_1920.jpg");
+    }
+
+    .header-rest {
+        top: 36rem;
+        font-size: 9rem;
+    }
+
+    .header-title, .header-subtitle {
+        width: 81.25%;
+    }
+
+    .header-subtitle {
+        padding-left: 0;
+        padding-bottom: 22rem;
+        text-align: right;
+        line-height: 0.8;
+    }
+
+    .header-buttons {
+        width: 67rem;
+    }
+}
