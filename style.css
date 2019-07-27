@@ -650,6 +650,7 @@ body {
 
     .header-title, .header-subtitle {
         width: 81.25%;
+        max-width: 1500px;
     }
 
     .header-subtitle {
@@ -661,5 +662,92 @@ body {
 
     .header-buttons {
         width: 67rem;
+    }
+
+    .main-section-img {
+        top: 2rem;
+        left: calc(50% - 566px);
+        transform: translate(0);
+    }
+
+    .main-section:nth-child(2n) .main-section-img {
+        top: 2rem;
+        left: calc(50%);
+        transform: translate(0);
+    }
+
+    .main-section-title {
+        padding-top: 10rem;
+        padding-left: 52%;
+        padding-bottom: 5rem;
+        font-size: 8rem;
+    }
+
+    .main-section:nth-child(2n) .main-section-title {
+        padding-left: 9.375%;
+    }
+
+    .main-section-article-title, .main-section-article-text {
+        margin-left: 52%;
+        margin-right: 9.375%;
+    }
+
+    .main-section:nth-child(2n) .main-section-article-title, .main-section:nth-child(2n) .main-section-article-text {
+        margin-left: 9.375%;
+        margin-right: 52%;
+    }
+
+    .main-section-article-title {
+        margin-top: 5rem;
+    }
+
+    .main-section-article-title-text {
+        font-size: 3.6rem;
+    }
+
+    .main-section-article-text {
+        margin-bottom: 5rem;
+        font-size: 2rem;
+    }
+
+    .aside-section-article {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+    .aside-section-article-img, .aside-section-article-container {
+        width: 50%;
+    }
+
+    .aside-section-article-title, .aside-section-article-text {
+        margin: 0 0 0 6%;
+        padding: 0;
+    }
+
+    .aside-section-article:nth-child(2n) .aside-section-article-img {
+        order: 1;
+    }
+
+    .aside-section-article-square {
+        top: 21rem;
+        left: calc(50% - 4.3%);
+        width: calc(7% + 3.1rem);
+        height: 15.5rem;
+        font-size: 2.4rem;
+    }
+
+    .aside-section-article-square-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .aside-section-article-square-container-number {
+        font-size: inherit;
+    }
+
+    .aside-section-article-square-container-line {
+        width: 100%;
     }
 }
