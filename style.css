@@ -15,6 +15,7 @@
 * {
     margin: 0;
     padding: 0;
+    overflow: hidden;
     font-family: 'Open Sans', Arial, sans-serif;
     text-decoration: none;
     text-transform: uppercase;
@@ -552,15 +553,47 @@ body {
         line-height: 1.7;
     }
 
+    .aside-section-article-container {
+        position: relative;
+    }
+
+    .aside-section-article-square {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        top: -8rem;
+        left: 3.5rem;
+        width: 11.6rem;
+        height: 11.6rem;
+        font-size: 2.4rem;
+    }
+
+    .aside-section-article-square-container {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
+        transform: translateY(0);
+    }
+
+    .aside-section-article-square-container-number {
+        font-size: inherit;
+    }
+
+    .aside-section-article-square-container-line {
+        width: 100%;
+    }
+
     .aside-section-article-title {
         font-size: 8rem;
         padding-right: 3.5rem;
+        margin-top: 7.5rem;
     }
 
     .aside-section-article-text {
         font-size: 2.4rem;
-        letter-spacing: 0.2rem;
+        letter-spacing: 0.1rem;
         padding-right: 3.5rem;
+        margin-bottom: 9.5rem;
     }
 
     .footer {
@@ -672,7 +705,7 @@ body {
 
     .main-section:nth-child(2n) .main-section-img {
         top: 2rem;
-        left: calc(50%);
+        left: 41.6vw;
         transform: translate(0);
     }
 
@@ -720,34 +753,84 @@ body {
         width: 50%;
     }
 
+    .aside-section-article-img-choice {
+        width: 100%;
+        height: auto;
+    }
+
     .aside-section-article-title, .aside-section-article-text {
-        margin: 0 0 0 6%;
+        margin: 0 9.375% 0 12rem;
         padding: 0;
+        width: auto;
     }
 
     .aside-section-article:nth-child(2n) .aside-section-article-img {
         order: 1;
     }
 
-    .aside-section-article-square {
-        top: 21rem;
-        left: calc(50% - 4.3%);
-        width: calc(7% + 3.1rem);
-        height: 15.5rem;
-        font-size: 2.4rem;
+    .aside-section-article:nth-child(2n) .aside-section-article-text, .aside-section-article:nth-child(2n) .aside-section-article-title {
+        margin-left: 9.375%;
+        margin-right: 12rem;
     }
 
-    .aside-section-article-square-container {
+    .aside-section-article-container {
+        position: static;
+    }
+
+    .aside-section-article-square {
+        top: 21rem;
+        left: calc(50% - 5.8rem);
+/*        left: calc(50% - (calc(7.5vw - 2.2rem) / 2));
+        width: calc(7.5vw - 2.2rem);
+        height: calc(7.5vw - 2.1rem);*/
+    }
+
+    .footer {
+        background-image: url(sources/img/game_1920.jpg);
+    }
+
+    .footer-flex {
+        position: relative;
+        top: 23rem;
         display: flex;
-        flex-direction: column;
         justify-content: center;
     }
 
-    .aside-section-article-square-container-number {
-        font-size: inherit;
+    .footer-container {
+        position: static;
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        border-radius: 3.5rem;
     }
 
-    .aside-section-article-square-container-line {
-        width: 100%;
+    .footer-logo-small {
+        position: static;
+    }
+
+    .footer-rest {
+        position: static;
+        width: auto;
+        height: auto;
+    }
+
+    .footer-title {
+        margin-left: 2.5rem;
+    }
+
+    .footer-subtitle {
+        padding-bottom: 0;
+        margin: 0 0 2rem 2.5rem;
+    }
+
+    .footer-buttons {
+        position: absolute;
+        top: 29rem;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .footer-logo {
+        bottom: 5rem;
     }
 }
