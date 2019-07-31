@@ -622,7 +622,7 @@ body {
         top: 33rem;
         height: 63rem;
         font-size: 8rem;
-        letter-spacing: 0.4rem;
+        letter-spacing: 0.3vw;
     }
 
     .footer-subtitle {
@@ -765,6 +765,11 @@ body {
         width: auto;
     }
 
+    .aside-section-article-title {
+        line-height: 1;
+        margin-bottom: 10rem;
+    }
+
     .aside-section-article:nth-child(2n) .aside-section-article-img {
         order: 1;
     }
@@ -780,10 +785,9 @@ body {
 
     .aside-section-article-square {
         top: 21rem;
-        left: calc(50% - 5.8rem);
-/*        left: calc(50% - (calc(7.5vw - 2.2rem) / 2));
-        width: calc(7.5vw - 2.2rem);
-        height: calc(7.5vw - 2.1rem);*/
+        left: calc(50% - 8.3rem);
+        width: 16.6rem;
+        height: 15.5rem;
     }
 
     .footer {
