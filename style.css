@@ -43,7 +43,7 @@ body {
         background-size: cover;
         background-position: center center;
         background-color: #000000;
-        color: white;
+        color: #ffffff;
     }
 
     .header::after {
@@ -58,7 +58,7 @@ body {
     }
 
     .header-logo, .header-rest  {
-        position: relative;
+        position: absolute;
         z-index: 1;
     }
 
@@ -66,7 +66,7 @@ body {
         left: calc(50% - 7.5rem);
         top: 3.2rem;
         width: 13rem;
-        fill: #FFFFFF;
+        fill: #ffffff;
     }
 
     .header-rest {
@@ -77,7 +77,6 @@ body {
         height: 37rem;
         font-size: 2.8rem;
         font-weight: bold;
-        letter-spacing: 0.2rem;
     }
 
     .header-title, .header-subtitle, .header-buttons {
@@ -87,18 +86,22 @@ body {
         margin-right: auto;
     }
 
+    .header-title {
+        letter-spacing: 0.2rem;
+    }
+
     .header-subtitle {
         box-sizing: border-box;
         padding-top: 1.5rem;
         padding-left: 4.5rem;
         padding-bottom: 8.8rem;
+        letter-spacing: 0.2rem;
         line-height: 1.15;
     }
 
     .header-buttons {
         display: flex;
         flex-wrap: wrap;
-        font-size: 0.8rem;
     }
 
     .header-button {
@@ -108,13 +111,21 @@ body {
         height: 3.5rem;
         margin-top: 1.5rem;
         background-color: #5e42b0;
+        color: #ffffff;
+        font-size: 0.8rem;
+        border: 0;
         border-radius: 1.5rem;
+    }
+
+    .header-button:hover {
+        background-color: #090c35;
     }
 
     .header-button-container {
         width: 12rem;
         margin-left: auto;
         margin-right: auto;
+        text-align: left;
     }
 
     .header-button:first-child {
@@ -122,7 +133,7 @@ body {
     }
 
     .header-button-logo {
-        fill: #FFFFFF;
+        fill: #ffffff;
         width: 2.3rem;
         height: 2.3rem;
         margin-right: 0.5rem;
@@ -131,5 +142,700 @@ body {
 
     .header-button-text-normal {
         font-weight: normal;
+    }
+
+    body {
+        letter-spacing: 0.06rem;
+    }
+
+    .main-section {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        margin-top: 1rem;
+        overflow: hidden;
+    }
+
+    .main-section-img {
+        position: absolute;
+        content: "";
+        left: 50%;
+        transform: translate(-50%);
+        top: 8rem;
+        margin: 0;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    .main-section-title {
+        flex-grow: 1;
+        padding-left: 2rem;
+        padding-bottom: 23rem;
+        font-size: 5rem;
+        font-weight: bold;
+        color: #e7e7e7;
+    }
+
+    .main-section-article:nth-child(3n) {
+        background-color: #fafafa;
+    }
+
+    .main-section-article:nth-child(3n+1) {
+        background-color: #f5f4f9;
+    }
+
+    .main-section-article:last-child {
+        background-color: #5e42b0;
+        color: #dedbed;
+    }
+
+    .main-section:nth-child(2n) .main-section-article:last-child {
+        background-color: #090c35;
+    }
+
+    .main-section-article-title {
+        display: flex;
+        font-weight: bold;
+        width: 87.5%;
+        margin-top: 5.5rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .main-section-article:first-of-type .main-section-article-title {
+        margin-top: 7.5rem;
+    }
+
+    .main-section-article-title-underline {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-section-article-title-underline-number {
+        color: #000000;
+        margin-top: 0.3rem;
+        font-size: 1.4rem;
+    }
+
+    .main-section:last-child .main-section-article:last-child .main-section-article-title-underline-number {
+        color: #5e42b0;
+    }
+
+    .main-section-article-title-underline-line {
+        width: 100%;
+        height: 0.4rem;
+        background-color: #5e42b0;
+    }
+
+    .main-section-article:last-of-type .main-section-article-title .main-section-article-title-underline .main-section-article-title-underline-line {
+        background-color: #ffffff;
+    }
+
+    .main-section-article-title-text {
+        margin-left: 0.7rem;
+        font-size: 2.3rem;
+        color: #c1c1c1;
+    }
+
+    .main-section-article-text {
+        width: 87.5%;
+        margin: 2rem auto 5rem auto;
+        font-size: 1.5rem;
+        text-transform: none;
+    }
+
+    .aside-section-article {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    .aside-section-article-img {
+        width: 100%;
+    }
+
+    .aside-section-article-square {
+        position: absolute;
+        left: 2rem;
+        top: 29.5rem;
+        width: 7rem;
+        height: 7rem;
+        background-color: #5e42b0;
+    }
+
+    .aside-section-article-square-container {
+        width: max-content;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .aside-section-article-square-container-number {
+        margin-bottom: 0.2rem;
+        font-size: 1.4rem;
+        font-weight: bold;
+        color: #f5f6f7;
+    }
+
+    .aside-section-article-square-container-line {
+        width: 1.7rem;
+        height: 0.4rem;
+        background-color: #8f7bc8;
+    }
+
+    .aside-section-article-title {
+        width: 87.5%;
+        margin: 3rem auto 1.5rem auto;
+        font-size: 2.8rem;
+        font-weight: bold;
+        color: #e7e7e7;
+    }
+
+    .aside-section-article-text {
+        width: 87.5%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 7rem;
+        font-size: 1.6rem;
+        text-transform: none;
+    }
+
+    .footer {
+        display: block;
+        position: relative;
+        min-width: 32rem;
+        min-height: 57rem;
+        margin: 0;
+        background-image: url("sources/img/game_767.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        background-color: #000000;
+        color: #ffffff;
+    }
+
+    .footer::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        content: "";
+        background-color: #090c35;
+        opacity: 0.85;
+    }
+
+    .footer-logo, .footer-rest, .footer-container  {
+        position: absolute;
+        z-index: 1;
+    }
+
+    .footer-logo {
+        left: calc(50% - 7.5rem);
+        bottom: 1rem;
+        width: 13rem;
+        fill: #ffffff;
+    }
+
+    .footer-container {
+        left: calc(50% - 3.6rem);
+        top: 10rem;
+        width: 7.2rem;
+        height: 7.4rem;
+        background-color: #5e42b0;
+        border-radius: 1.4rem;
+    }
+
+    .footer-logo-small {
+        position: absolute;
+        left: calc(50% - 3rem);
+        top: calc(50% - 2.75rem);
+        width: 6rem;
+        fill: #ffffff;
+        z-index: 2;
+    }
+
+    .footer-rest {
+        top: 22rem;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 34rem;
+        font-size: 3.2rem;
+        font-weight: bold;
+    }
+
+    .footer-title, .footer-subtitle, .footer-buttons {
+        display: block;
+        width: max-content;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .footer-subtitle {
+        box-sizing: border-box;
+        padding-top: 0.2rem;
+        padding-bottom: 7.2rem;
+        font-size: 1.4rem;
+        font-weight: normal;
+        line-height: 1.15;
+        color: #8378a7;
+    }
+
+    .footer-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        width: 28rem;
+        font-size: 0.8rem;
+    }
+
+    .footer-button {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 3.5rem;
+        margin-top: 1.5rem;
+        background-color: #5e42b0;
+        color: #ffffff;
+        font-size: 0.8rem;
+        border: 0;
+        border-radius: 1.5rem;
+    }
+
+    .footer-button:hover {
+        background-color: #090c35;
+    }
+
+    .footer-button-container {
+        width: 12rem;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
+    }
+
+    .footer-button:first-child {
+        margin-top: 0;
+    }
+
+    .footer-button-logo {
+        fill: #ffffff;
+        width: 2.3rem;
+        height: 2.3rem;
+        margin-right: 0.5rem;
+        float: left;
+    }
+
+    .footer-button-text-normal {
+        font-weight: normal;
+    }
+}
+
+@media (min-width: 641px) {
+    .header {
+        background-image: url("sources/img/football_767.jpg");
+        background-size: cover;
+        min-height: 96rem;
+    }
+
+    .header-logo {
+        left: calc(50% - 10rem);
+        top: 4rem;
+        width: 20rem;
+        fill: #ffffff;
+    }
+
+    .header-rest {
+        top: 24rem;
+        font-size: 6.4rem;
+    }
+
+    .header-title {
+        width: 58.8rem;
+    }
+
+    .header-subtitle {
+        width: 64.8rem;
+        padding-top: 0;
+        padding-left: 14.5rem;
+        padding-bottom: 30rem;
+    }
+
+    .header-buttons {
+        width: 64.8rem;
+        justify-content: space-between;
+    }
+
+    .header-button {
+        width: 31rem;
+        height: 7.7rem;
+        margin: 0;
+        font-size: 1.4rem;
+        border-radius: 3.6rem;
+    }
+
+    .header-button-logo {
+        width: 4rem;
+        height: 4rem;
+        margin-right: 2.5rem;
+    }
+
+    .header-button-container {
+        width: auto;
+    }
+
+    .header-button-text-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-section {
+        margin-top: 0;
+    }
+
+    .main-section-img {
+        left: 0;
+        transform: translate(-33%);
+        top: 10.5rem;
+    }
+
+    .main-section:nth-child(2n) .main-section-img {
+        left: 47.5rem;
+        top: 5rem;
+    }
+
+    .main-section-title {
+        padding-top: 7rem;
+        padding-left: 29.5rem;
+        padding-bottom: 0;
+        font-size: 8rem;
+    }
+
+    .main-section:nth-child(2n) .main-section-title {
+        padding-left: 3.2rem;
+    }
+
+    .main-section-article:nth-child(3n) {
+        background-color: #ffffff;
+    }
+
+    .main-section-article-title, .main-section-article-text {
+        width: auto;
+        margin-left: 29.5rem;
+        margin-right: 3.7rem;
+    }
+
+    .main-section:nth-child(2n) .main-section-article-title, .main-section:nth-child(2n) .main-section-article-text {
+        margin-left: 3.2rem;
+        margin-right: 32rem;
+    }
+
+    .main-section-article-title {
+        margin-top: 3.5rem;
+    }
+
+    .main-section-article-title-underline-number {
+        font-size: 1.8rem;
+    }
+
+    .main-section-article-title-text {
+        font-size: 3.2rem;
+    }
+
+    .main-section-article:first-of-type .main-section-article-title {
+        margin-top: 2.5rem;
+    }
+
+    .main-section-article-text {
+        margin-top: 1.5rem;
+        margin-bottom: 3rem;
+        font-size: 1.6rem;
+        line-height: 1.7;
+    }
+
+    .aside-section-article-container {
+        position: relative;
+    }
+
+    .aside-section-article-square {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        top: -8rem;
+        left: 3.5rem;
+        width: 11.6rem;
+        height: 11.6rem;
+        font-size: 2.4rem;
+    }
+
+    .aside-section-article-square-container {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
+        transform: translateY(0);
+    }
+
+    .aside-section-article-square-container-number {
+        font-size: inherit;
+    }
+
+    .aside-section-article-square-container-line {
+        width: 100%;
+    }
+
+    .aside-section-article-title {
+        font-size: 8rem;
+        padding-right: 3.5rem;
+        margin-top: 7.5rem;
+    }
+
+    .aside-section-article-text {
+        font-size: 2.4rem;
+        letter-spacing: 0.1rem;
+        padding-right: 3.5rem;
+        margin-bottom: 9.5rem;
+    }
+
+    .footer {
+        min-width: 64.1rem;
+        min-height: 96rem;
+        background-image: url("sources/img/game_1280.jpg");
+    }
+
+    .footer-container {
+        left: calc(50% - 6.5rem);
+        top: 12.5rem;
+        width: 13rem;
+        height: 13.5rem;
+        border-radius: 2.4rem;
+    }
+
+    .footer-logo-small {
+        position: absolute;
+        left: calc(50% - 5rem);
+        top: calc(50% - 4.25rem);
+        width: 10rem;
+    }
+
+    .footer-rest {
+        top: 33rem;
+        height: 63rem;
+        font-size: 8rem;
+        letter-spacing: 0.3vw;
+    }
+
+    .footer-subtitle {
+        box-sizing: border-box;
+        padding-top: 0.2rem;
+        padding-bottom: 27.5rem;
+        font-size: 3.6rem;
+        line-height: 1.15;
+        color: #8378a7;
+        letter-spacing: normal;
+    }
+
+    .footer-buttons {
+        width: 64.8rem;
+        justify-content: space-between;
+        letter-spacing: normal;
+    }
+
+    .footer-button {
+        width: 31rem;
+        height: 7.7rem;
+        margin: 0;
+        font-size: 1.4rem;
+        border-radius: 3.6rem;
+    }
+
+    .footer-button-logo {
+        width: 4rem;
+        height: 4rem;
+        margin-right: 2.5rem;
+    }
+
+    .footer-button-container {
+        width: auto;
+    }
+
+    .footer-button-text-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-logo {
+        left: calc(50% - 10rem);
+        bottom: 2rem;
+        width: 20rem;
+        fill: #ffffff;
+    }
+}
+
+@media (min-width: 961px) {
+    .header {
+        background-image: url("sources/img/football_1920.jpg");
+    }
+
+    .header-rest {
+        top: 36rem;
+        font-size: 9rem;
+    }
+
+    .header-title, .header-subtitle {
+        width: 81.25%;
+        max-width: 1500px;
+    }
+
+    .header-subtitle {
+        padding-left: 0;
+        padding-bottom: 22rem;
+        text-align: right;
+        line-height: 0.8;
+    }
+
+    .header-buttons {
+        width: 67rem;
+    }
+
+    .main-section-img {
+        top: 2rem;
+        left: calc(50% - 566px);
+        transform: translate(0);
+    }
+
+    .main-section:nth-child(2n) .main-section-img {
+        top: 2rem;
+        left: 41.6vw;
+        transform: translate(0);
+    }
+
+    .main-section-title {
+        padding-top: 10rem;
+        padding-left: 52%;
+        padding-bottom: 5rem;
+        font-size: 8rem;
+    }
+
+    .main-section:nth-child(2n) .main-section-title {
+        padding-left: 9.375%;
+    }
+
+    .main-section-article-title, .main-section-article-text {
+        margin-left: 52%;
+        margin-right: 9.375%;
+    }
+
+    .main-section:nth-child(2n) .main-section-article-title, .main-section:nth-child(2n) .main-section-article-text {
+        margin-left: 9.375%;
+        margin-right: 52%;
+    }
+
+    .main-section-article-title {
+        margin-top: 5rem;
+    }
+
+    .main-section-article-title-text {
+        font-size: 3.6rem;
+    }
+
+    .main-section-article-text {
+        margin-bottom: 5rem;
+        font-size: 2rem;
+    }
+
+    .aside-section-article {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+    .aside-section-article-img, .aside-section-article-container {
+        width: 50%;
+    }
+
+    .aside-section-article-img-choice {
+        width: 100%;
+        height: auto;
+    }
+
+    .aside-section-article-title, .aside-section-article-text {
+        margin: 0 9.375% 0 12rem;
+        padding: 0;
+        width: auto;
+    }
+
+    .aside-section-article-title {
+        line-height: 1;
+        margin-bottom: 10rem;
+    }
+
+    .aside-section-article:nth-child(2n) .aside-section-article-img {
+        order: 1;
+    }
+
+    .aside-section-article:nth-child(2n) .aside-section-article-text, .aside-section-article:nth-child(2n) .aside-section-article-title {
+        margin-left: 9.375%;
+        margin-right: 12rem;
+    }
+
+    .aside-section-article-container {
+        position: static;
+    }
+
+    .aside-section-article-square {
+        top: 21rem;
+        left: calc(50% - 8.3rem);
+        width: 16.6rem;
+        height: 15.5rem;
+    }
+
+    .footer {
+        background-image: url(sources/img/game_1920.jpg);
+    }
+
+    .footer-flex {
+        position: relative;
+        top: 23rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-container {
+        position: static;
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        border-radius: 3.5rem;
+    }
+
+    .footer-logo-small {
+        position: static;
+    }
+
+    .footer-rest {
+        position: static;
+        width: auto;
+        height: auto;
+    }
+
+    .footer-title {
+        margin-left: 2.5rem;
+    }
+
+    .footer-subtitle {
+        padding-bottom: 0;
+        margin: 0 0 2rem 2.5rem;
+    }
+
+    .footer-buttons {
+        position: absolute;
+        top: 29rem;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .footer-logo {
+        bottom: 5rem;
     }
 }
