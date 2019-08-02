@@ -793,6 +793,7 @@ body {
 
     .aside-section-article-container {
         position: static;
+        margin: 3rem 0;
     }
 
     .aside-section-article-square {
