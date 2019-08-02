@@ -730,7 +730,9 @@ body {
     }
 
     .main-section:nth-child(2n) .main-section-title {
+        box-sizing: border-box;
         padding-left: 9.375%;
+        width: 41.6vw;
     }
 
     .main-section-article-title, .main-section-article-text {
