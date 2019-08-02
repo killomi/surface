@@ -88,6 +88,7 @@ body {
 
     .header-title {
         letter-spacing: 0.2rem;
+        font-size: inherit;
     }
 
     .header-subtitle {
@@ -97,6 +98,7 @@ body {
         padding-bottom: 8.8rem;
         letter-spacing: 0.2rem;
         line-height: 1.15;
+        font-size: inherit;
     }
 
     .header-buttons {
@@ -126,6 +128,7 @@ body {
         margin-left: auto;
         margin-right: auto;
         text-align: left;
+        color: inherit;
     }
 
     .header-button:first-child {
@@ -374,6 +377,10 @@ body {
         margin-right: auto;
     }
 
+    .footer-title {
+        font-size: inherit;
+    }
+
     .footer-subtitle {
         box-sizing: border-box;
         padding-top: 0.2rem;
@@ -413,6 +420,7 @@ body {
         margin-left: auto;
         margin-right: auto;
         text-align: left;
+        color: inherit;
     }
 
     .footer-button:first-child {
@@ -623,6 +631,10 @@ body {
         height: 63rem;
         font-size: 8rem;
         letter-spacing: 0.3vw;
+    }
+
+    .footer-title {
+        font-size: inherit;
     }
 
     .footer-subtitle {
