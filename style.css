@@ -258,6 +258,11 @@ body {
         width: 100%;
     }
 
+    .aside-section-article-img-choice {
+        width: 100%;
+        height: auto;
+    }
+
     .aside-section-article-square {
         position: absolute;
         left: 2rem;
@@ -766,11 +771,6 @@ body {
 
     .aside-section-article-img, .aside-section-article-container {
         width: 50%;
-    }
-
-    .aside-section-article-img-choice {
-        width: 100%;
-        height: auto;
     }
 
     .aside-section-article-title, .aside-section-article-text {
