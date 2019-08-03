@@ -372,7 +372,7 @@ body {
 
     .footer-title, .footer-subtitle, .footer-buttons {
         display: block;
-        width: max-content;
+        width: fit-content;
         margin-left: auto;
         margin-right: auto;
     }
@@ -814,6 +814,8 @@ body {
         top: 23rem;
         display: flex;
         justify-content: center;
+        width: 80%;
+        margin: 0 auto;
     }
 
     .footer-container {
@@ -821,6 +823,7 @@ body {
         display: flex;
         justify-content: center;
         align-self: center;
+        flex-shrink: 0;
         border-radius: 3.5rem;
     }
 
