@@ -867,3 +867,9 @@ body {
         z-index: 1;
     }
 }
+
+@media (min-width: 641px) and (max-width: 690px) {
+    .footer-subtitle {
+        padding-bottom: 17.5rem;
+    }
+}
