@@ -263,10 +263,14 @@ body {
         height: auto;
     }
 
+    .aside-section-article-container {
+        position: relative;
+    }
+
     .aside-section-article-square {
         position: absolute;
         left: 2rem;
-        top: 29.5rem;
+        top: -6rem;
         width: 7rem;
         height: 7rem;
         background-color: #5e42b0;
@@ -377,9 +381,10 @@ body {
 
     .footer-title, .footer-subtitle, .footer-buttons {
         display: block;
-        width: fit-content;
+        width: auto;
         margin-left: auto;
         margin-right: auto;
+        text-align: center;
     }
 
     .footer-title {
@@ -565,10 +570,6 @@ body {
         margin-bottom: 3rem;
         font-size: 1.6rem;
         line-height: 1.7;
-    }
-
-    .aside-section-article-container {
-        position: relative;
     }
 
     .aside-section-article-square {
@@ -835,6 +836,10 @@ body {
         position: static;
         width: auto;
         height: auto;
+    }
+
+    .footer-title, .footer-subtitle, .footer-buttons {
+        text-align: left;
     }
 
     .footer-title {
