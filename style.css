@@ -35,8 +35,7 @@ body {
     .header {
         display: block;
         position: relative;
-        min-width: 32rem;
-        min-height: 57rem;
+        height: 100%;
         margin: 0;
         background-image: url("sources/img/football_1920.jpg");
         background-repeat: no-repeat;
@@ -62,8 +61,8 @@ body {
         flex-direction: column;
         justify-content: center;
         position: relative;
-        max-width: 100%;
-        max-height: 100%;
+        width: 100%;
+        height: 100%;
         font-size: 2.8rem;
         font-weight: bold;
         z-index: 1;
@@ -101,7 +100,7 @@ body {
     .header-buttons {
         display: flex;
         flex-wrap: wrap;
-        padding-bottom: 3rem;
+        padding-bottom: 13rem;
         margin: 0 auto;
     }
 
@@ -308,7 +307,7 @@ body {
         text-transform: none;
     }
 
-    .new-footer {
+    .footer {
         display: block;
         position: relative;
         height: 100%;
@@ -321,7 +320,7 @@ body {
         color: #ffffff;
     }
 
-    .new-footer::after {
+    .footer::after {
         position: absolute;
         content: "";
         top: 0;
@@ -332,20 +331,20 @@ body {
         opacity: 0.85;
     }
 
-    .new-footer-container {
+    .footer-container {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         position: relative;
-        max-width: 100%;
-        max-height: 100%;
+        width: 100%;
+        height: 100%;
         font-size: 2.8rem;
         font-weight: bold;
         z-index: 1;
     }
 
-    .new-footer-logo-small-container {
+    .footer-logo-small-container {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -356,23 +355,23 @@ body {
         border-radius: 1.4rem;
     }
 
-    .new-footer-logo-small {
+    .footer-logo-small {
         width: 6rem;
         fill: #ffffff;
     }
 
-    .new-footer-title, .new-footer-subtitle, .new-footer-buttons {
+    .footer-title, .footer-subtitle, .footer-buttons {
         display: block;
         width: auto;
         margin: 0 auto;
         text-align: center;
     }
 
-    .new-footer-title {
+    .footer-title {
         font-size: 3.2rem;
     }
 
-    .new-footer-subtitle {
+    .footer-subtitle {
         box-sizing: border-box;
         padding-top: 0.2rem;
         padding-bottom: 7.2rem;
@@ -382,13 +381,13 @@ body {
         color: #8378a7;
     }
 
-    .new-footer-buttons {
+    .footer-buttons {
         display: flex;
         flex-wrap: wrap;
         margin: 0 auto;
     }
 
-    .new-footer-button {
+    .footer-button {
         display: flex;
         align-items: center;
         width: 100%;
@@ -401,11 +400,11 @@ body {
         border-radius: 1.5rem;
     }
 
-    .new-footer-button:hover {
+    .footer-button:hover {
         background-color: #090c35;
     }
 
-    .new-footer-button-container {
+    .footer-button-container {
         width: 12rem;
         margin-left: auto;
         margin-right: auto;
@@ -413,11 +412,11 @@ body {
         color: inherit;
     }
 
-    .new-footer-button:first-child {
+    .footer-button:first-child {
         margin-top: 0;
     }
 
-    .new-footer-button-logo {
+    .footer-button-logo {
         fill: #ffffff;
         width: 2.3rem;
         height: 2.3rem;
@@ -425,12 +424,12 @@ body {
         float: left;
     }
 
-    .new-footer-button-text-normal {
+    .footer-button-text-normal {
         display: block;
         font-weight: normal;
     }
 
-    .new-footer-logo {
+    .footer-logo {
         margin: 9rem auto 1rem auto;
         width: 13rem;
         fill: #ffffff;
@@ -599,11 +598,11 @@ body {
         letter-spacing: 0.1rem;
     }
 
-    .new-footer {
+    .footer {
         background-image: url("sources/img/game_1280.jpg");
     }
 
-    .new-footer-logo-small-container {
+    .footer-logo-small-container {
         margin-top: 13rem;
         margin-bottom: 7rem;
         width: 13rem;
@@ -611,27 +610,27 @@ body {
         border-radius: 2.4rem;
     }
 
-    .new-footer-logo-small {
+    .footer-logo-small {
         width: 10rem;
     }
 
-    .new-footer-title {
+    .footer-title {
         font-size: 8rem;
     }
 
-    .new-footer-subtitle {
+    .footer-subtitle {
         padding-bottom: 27rem;
         font-size: 3.6rem;
     }
 
-    .new-footer-buttons {
+    .footer-buttons {
         width: 99vw;
         max-width: 64.8rem;
         justify-content: space-between;
         letter-spacing: normal;
     }
 
-    .new-footer-button {
+    .footer-button {
         width: 31rem;
         height: 7.7rem;
         margin: 0;
@@ -639,22 +638,22 @@ body {
         border-radius: 3.6rem;
     }
 
-    .new-footer-button-logo {
+    .footer-button-logo {
         width: 4rem;
         height: 4rem;
         margin-right: 2.5rem;
     }
 
-    .new-footer-button-container {
+    .footer-button-container {
         width: auto;
     }
 
-    .new-footer-button-text-container {
+    .footer-button-text-container {
         display: flex;
         flex-direction: column;
     }
 
-    .new-footer-logo {
+    .footer-logo {
         width: 20rem;
         margin: 6rem auto 2rem auto;
     }
@@ -782,11 +781,11 @@ body {
         height: 15.5rem;
     }
 
-    .new-footer {
+    .footer {
         background-image: url(sources/img/game_1920.jpg);
     }
 
-    .new-footer-title-container {
+    .footer-title-container {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -796,43 +795,29 @@ body {
         margin: 0 auto;
     }
 
-    .new-footer-logo-small-container {
+    .footer-logo-small-container {
         margin: 0;
     }
 
-    .new-footer-title {
+    .footer-title {
         margin: 0 0 0 2.5rem;
         letter-spacing: 0.3vw;
         text-align: left;
     }
 
-    .new-footer-subtitle {
+    .footer-subtitle {
         padding-bottom: 2rem;
         letter-spacing: normal;
         text-align: left;
     }
 
-    .new-footer-logo {
+    .footer-logo {
         margin: 25rem auto 5rem auto;
     }
 }
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-    .header-logo, .footer-logo {
-        height: 50px;
-    }
-
     .aside-section-article-square-container {
         width: 17%;
-    }
-
-    .footer-buttons {
-        z-index: 1;
-    }
-}
-
-@media (min-width: 641px) and (max-width: 690px) {
-    .footer-subtitle {
-        padding-bottom: 17.5rem;
     }
 }
