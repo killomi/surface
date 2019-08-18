@@ -430,7 +430,8 @@ body {
     }
 
     .footer-logo {
-        margin: 9rem auto 1rem auto;
+        margin: 9rem auto 0 auto;
+        padding-bottom: 1rem;
         width: 13rem;
         fill: #ffffff;
     }
@@ -507,7 +508,9 @@ body {
 
     .main-section:nth-child(2n) .main-section-img {
         top: 5rem;
-        left: 47.5rem;
+        left: unset;
+        right: 0;
+        transform: none;
     }
 
     .main-section-title {
@@ -655,7 +658,8 @@ body {
 
     .footer-logo {
         width: 20rem;
-        margin: 6rem auto 2rem auto;
+        margin: 6rem auto 0 auto;
+        padding-bottom: 2rem;
     }
 }
 
@@ -790,9 +794,8 @@ body {
         align-items: center;
         justify-content: center;
         padding-top: 23rem;
-        padding-bottom: 12rem;
         width: 80%;
-        margin: 0 auto;
+        margin: 0 auto 12rem auto;
     }
 
     .footer-logo-small-container {
@@ -812,7 +815,8 @@ body {
     }
 
     .footer-logo {
-        margin: 25rem auto 5rem auto;
+        margin: 25rem auto 0 auto;
+        padding-bottom: 5rem;
     }
 }
 
