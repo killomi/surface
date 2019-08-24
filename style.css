@@ -538,14 +538,11 @@ body {
 
     .main-section-article-title {
         margin-top: 3.5rem;
-    }
-
-    .main-section-article-title-underline-number {
-        font-size: 1.8rem;
-    }
-
-    .main-section-article-title-text {
         font-size: 3.2rem;
+    }
+
+    .main-section-article-title-number {
+        font-size: 1.8rem;
     }
 
     .main-section-article:first-of-type .main-section-article-title {
@@ -729,9 +726,6 @@ body {
 
     .main-section-article-title {
         margin-top: 5rem;
-    }
-
-    .main-section-article-title-text {
         font-size: 3.6rem;
     }
 
