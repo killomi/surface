@@ -241,27 +241,27 @@ body {
         text-transform: none;
     }
 
-    .aside-section-article {
+    .aside-article {
         display: flex;
         position: relative;
         flex-direction: column;
         overflow: hidden;
     }
 
-    .aside-section-article-img {
+    .aside-article-img {
         width: 100%;
     }
 
-    .aside-section-article-img-choice {
+    .aside-article-img-choice {
         width: 100%;
         height: auto;
     }
 
-    .aside-section-article-container {
+    .aside-article-container {
         position: relative;
     }
 
-    .aside-section-article-square {
+    .aside-article-square {
         position: absolute;
         top: -6rem;
         left: 2rem;
@@ -270,26 +270,28 @@ body {
         background-color: #5e42b0;
     }
 
-    .aside-section-article-square-container {
+    .aside-article-square-container {
         width: max-content;
         margin: 50% auto 0 auto;
         transform: translateY(-50%);
     }
 
-    .aside-section-article-square-container-number {
+    .aside-article-square-container-number {
         margin-bottom: 0.2rem;
         font-size: 1.4rem;
         font-weight: bold;
         color: #f5f6f7;
     }
 
-    .aside-section-article-square-container-line {
-        width: 1.7rem;
+    .aside-article-square-container-number::after {
+        display: block;
+        content: "";
+        width: 100%;
         height: 0.4rem;
         background-color: #8f7bc8;
     }
 
-    .aside-section-article-title {
+    .aside-article-title {
         width: 87.5%;
         margin: 3rem auto 1.5rem auto;
         font-size: 2.8rem;
@@ -297,7 +299,7 @@ body {
         color: #e7e7e7;
     }
 
-    .aside-section-article-text {
+    .aside-article-text {
         width: 87.5%;
         margin: 0 auto 7rem auto;
         font-size: 1.6rem;
@@ -556,7 +558,7 @@ body {
         line-height: 1.7;
     }
 
-    .aside-section-article-square {
+    .aside-article-square {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -567,28 +569,24 @@ body {
         font-size: 2.4rem;
     }
 
-    .aside-section-article-square-container {
+    .aside-article-square-container {
         display: flex;
         flex-direction: column;
         margin-top: 0;
         transform: translateY(0);
     }
 
-    .aside-section-article-square-container-number {
+    .aside-article-square-container-number {
         font-size: inherit;
     }
 
-    .aside-section-article-square-container-line {
-        width: 100%;
-    }
-
-    .aside-section-article-title {
+    .aside-article-title {
         font-size: 8rem;
         padding-right: 3.5rem;
         margin-top: 7.5rem;
     }
 
-    .aside-section-article-text {
+    .aside-article-text {
         padding-right: 3.5rem;
         margin-bottom: 9.5rem;
         font-size: 2.4rem;
@@ -734,42 +732,42 @@ body {
         font-size: 2rem;
     }
 
-    .aside-section-article {
+    .aside-article {
         flex-direction: row;
         flex-wrap: nowrap;
         align-items: center;
     }
 
-    .aside-section-article-img, .aside-section-article-container {
+    .aside-article-img, .aside-article-container {
         width: 50%;
     }
 
-    .aside-section-article-title, .aside-section-article-text {
+    .aside-article-title, .aside-article-text {
         margin: 0 9.375% 0 12rem;
         padding: 0;
         width: auto;
     }
 
-    .aside-section-article-title {
+    .aside-article-title {
         margin-bottom: 10rem;
         line-height: 1;
     }
 
-    .aside-section-article:nth-child(2n) .aside-section-article-img {
+    .aside-article:nth-child(2n) .aside-article-img {
         order: 1;
     }
 
-    .aside-section-article:nth-child(2n) .aside-section-article-text, .aside-section-article:nth-child(2n) .aside-section-article-title {
+    .aside-article:nth-child(2n) .aside-article-text, .aside-article:nth-child(2n) .aside-article-title {
         margin-left: 9.375%;
         margin-right: 12rem;
     }
 
-    .aside-section-article-container {
+    .aside-article-container {
         position: static;
         padding: 3rem 0;
     }
 
-    .aside-section-article-square {
+    .aside-article-square {
         top: 21rem;
         left: calc(50% - 8.3rem);
         width: 16.6rem;
@@ -812,7 +810,7 @@ body {
 }
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-    .aside-section-article-square-container {
+    .aside-article-square-container {
         width: 17%;
     }
 }
