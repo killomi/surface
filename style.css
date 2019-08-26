@@ -347,6 +347,7 @@ body {
         display: flex;
         align-items: center;
         justify-content: center;
+        flex-shrink: 0;
         margin: 10rem auto 4.5rem auto;
         width: 7.2rem;
         height: 7.4rem;
