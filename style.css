@@ -122,11 +122,18 @@ body {
     }
 
     .header-button-container {
+        display: flex;
+        align-items: center;
         width: 12rem;
+        height: 100%;
         margin-left: auto;
         margin-right: auto;
         text-align: left;
         color: inherit;
+    }
+
+    .header-button-container-again {
+        width: 100%;
     }
 
     .header-button:first-child {
