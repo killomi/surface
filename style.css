@@ -108,7 +108,7 @@ body {
         display: flex;
         align-items: center;
         width: 100%;
-        height: 3.5rem;
+        min-height: 3.5rem;
         margin-top: 1.5rem;
         font-size: 0.8rem;
         background-color: #5e42b0;
@@ -124,16 +124,16 @@ body {
     .header-button-container {
         display: flex;
         align-items: center;
-        width: 12rem;
+        justify-content: center;
+        width: 100%;
         height: 100%;
-        margin-left: auto;
-        margin-right: auto;
         text-align: left;
         color: inherit;
     }
 
     .header-button-container-again {
-        width: 100%;
+        width: 12rem;
+        padding: 0.5rem 0;
     }
 
     .header-button:first-child {
@@ -405,7 +405,7 @@ body {
         display: flex;
         align-items: center;
         width: 100%;
-        height: 3.5rem;
+        min-height: 3.5rem;
         margin-top: 1.5rem;
         font-size: 0.8rem;
         background-color: #5e42b0;
@@ -419,11 +419,18 @@ body {
     }
 
     .footer-button-container {
-        width: 12rem;
-        margin-left: auto;
-        margin-right: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
         text-align: left;
         color: inherit;
+    }
+
+    .footer-button-container-again {
+        width: 12rem;
+        padding: 0.5rem 0;
     }
 
     .footer-button:first-child {
@@ -489,7 +496,7 @@ body {
 
     .header-button {
         width: 31rem;
-        height: 7.7rem;
+        min-height: 7.7rem;
         margin: 0;
         font-size: 1.4rem;
         border-radius: 3.6rem;
@@ -502,6 +509,10 @@ body {
     }
 
     .header-button-container {
+        width: 100%;
+    }
+
+    .header-button-container-again {
         width: auto;
     }
 
@@ -655,6 +666,10 @@ body {
     }
 
     .footer-button-container {
+        width: 100%;
+    }
+
+    .footer-button-container-again {
         width: auto;
     }
 
